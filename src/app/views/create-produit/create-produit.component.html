@@ -1,0 +1,27 @@
+<div class="card">
+  <div class="card-header">
+    Ajouter un produit
+  </div>
+  <div class="card-body">
+    <div class="form-group">
+      <label>ref</label>
+      <input type="text" class="form-control" placeholder="donner ref" [(ngModel)]="produit.ref">
+    </div>
+    <div class="form-group">
+      <label>nom</label>
+      <input type="text" class="form-control" placeholder="donner nom" [(ngModel)]="produit.nom">
+    </div>
+    <div class="form-group">
+      <label>prix</label>
+      <input type="number" class="form-control" placeholder="donner prix" min="0" [(ngModel)]="produit.prix">
+    </div>
+    <div class="form-group">
+      <label>description</label>
+      <input type="text"  class="form-control" placeholder="donner description" [(ngModel)]="produit.description">
+    </div>
+  </div>
+
+  <button class="btn btn-success" (click)="save()">
+    Ajouter
+  </button>
+</div>
